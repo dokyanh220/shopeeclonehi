@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 *{
@@ -78,3 +79,46 @@ html{
     position: relative;
     border-radius: 5px;
 }
+
+/* Modal__button */
+
+.btn{
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    line-height: 16px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+
+}
+
+.btn.btn--size-s{
+    height: 30px;
+    font-size: 1.2rem;
+    line-height: 14px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-normal:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn.btn--primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--disable{
+    cursor: default;
+}
+
